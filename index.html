@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Sitio Web</title>
+
+  <!-- =============================================
+       FUENTES DE GOOGLE
+       Importamos las fuentes tipográficas del sitio.
+       Si quieres cambiarlas, visita fonts.google.com,
+       elige otras y reemplaza este enlace.
+  ============================================= -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <!-- =============================================
+       ENLACE AL ARCHIVO CSS
+       Aquí conectamos este HTML con el archivo
+       "estilos.css" que contiene todo el diseño.
+       IMPORTANTE: ambos archivos deben estar
+       en la misma carpeta para que funcione.
+  ============================================= -->
+  <link rel="stylesheet" href="estilos.css" />
+
+</head>
+
+<body>
+
+  <!-- =============================================
+       MENÚ DE NAVEGACIÓN
+       Cambia "MILOGO" por el nombre de tu sitio.
+       Los <a href="#..."> llevan a cada sección.
+  ============================================= -->
+  <nav>
+    <a href="#home" class="nav-logo">MILOGO</a>
+
+    <ul class="nav-links">
+      <li><a href="#home">Inicio</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#blog">Blog</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- =============================================
+       SECCIÓN 1: HOME (INICIO)
+       La primera pantalla que ve el usuario.
+       Edita los textos entre las etiquetas.
+  ============================================= -->
+  <section id="home">
+    <div class="home-contenido">
+
+      <!-- Etiqueta pequeña sobre el título -->
+      <span class="home-etiqueta">Bienvenido a mi sitio</span>
+
+      <!-- Título principal: cambia "Tu Nombre" -->
+      <h1 class="home-titulo">
+        Hola, soy <span>Tu Nombre</span>
+      </h1>
+
+      <!-- Descripción breve de quién eres -->
+      <p class="home-descripcion">
+        Diseñador, fotógrafo o lo que tú seas. Escribe aquí una
+        descripción breve de lo que haces y por qué vale la pena visitarte.
+      </p>
+
+      <!-- Botones de acción -->
+      <div class="home-botones">
+        <a href="#galeria" class="btn-primario">Ver Galería</a>
+        <a href="#blog"    class="btn-secundario">Leer Blog</a>
+      </div>
+
+    </div>
+
+    <!-- Indicador visual animado para hacer scroll -->
+    <div class="scroll-indicador">SCROLL</div>
+  </section>
+
+
+  <hr class="separador" />
+
+
+  <!-- =============================================
+       SECCIÓN 2: GALERÍA
+       Para AGREGAR una imagen nueva:
+         1. Copia un bloque <div class="galeria-item">
+         2. Pégalo antes del comentario "fin galeria-grid"
+         3. Cambia src="..." por la URL de tu imagen
+         4. Cambia el texto del h3 y el p
+  ============================================= -->
+  <section id="galeria">
+
+    <h2 class="seccion-titulo fade-in">Mi <span>Galería</span></h2>
+    <div class="linea-decorativa fade-in"></div>
+    <p class="seccion-subtitulo fade-in">Una selección de mi trabajo más reciente</p>
+
+    <div class="galeria-grid">
+
+      <!-- TARJETA 1 -->
+      <div class="galeria-item fade-in">
+        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600"
+             alt="Paisaje montañoso" />
+        <div class="galeria-overlay">
+          <div class="galeria-overlay-texto">
+            <h3>Montañas al amanecer</h3>
+            <p>Paisaje · Naturaleza</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- TARJETA 2 -->
+      <div class="galeria-item fade-in">
+        <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=600"
+             alt="Ciudad de noche" />
+        <div class="galeria-overlay">
+          <div class="galeria-overlay-texto">
+            <h3>Ciudad iluminada</h3>
+            <p>Urbano · Arquitectura</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- TARJETA 3 -->
+      <div class="galeria-item fade-in">
+        <img src="https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=600"
+             alt="Retrato artístico" />
+        <div class="galeria-overlay">
+          <div class="galeria-overlay-texto">
+            <h3>Retrato en estudio</h3>
+            <p>Retrato · Fotografía</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- TARJETA 4 -->
+      <div class="galeria-item fade-in">
+        <img src="https://images.unsplash.com/photo-1540979388789-6cee28a1cdc9?w=600"
+             alt="Abstracto colorido" />
+        <div class="galeria-overlay">
+          <div class="galeria-overlay-texto">
+            <h3>Arte abstracto</h3>
+            <p>Arte · Color</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- TARJETA 5 -->
+      <div class="galeria-item fade-in">
+        <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=600"
+             alt="Playa tropical" />
+        <div class="galeria-overlay">
+          <div class="galeria-overlay-texto">
+            <h3>Playa tropical</h3>
+            <p>Viajes · Naturaleza</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- TARJETA 6 -->
+      <div class="galeria-item fade-in">
+        <img src="https://images.unsplash.com/photo-1465101162946-4377e57745c3?w=600"
+             alt="Cielo estrellado" />
+        <div class="galeria-overlay">
+          <div class="galeria-overlay-texto">
+            <h3>Vía láctea</h3>
+            <p>Astrofotografía · Noche</p>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- fin galeria-grid -->
+  </section>
+
+
+  <hr class="separador" />
+
+
+  <!-- =============================================
+       SECCIÓN 3: BLOG
+       Para AGREGAR un artículo nuevo:
+         1. Copia un bloque <article class="blog-tarjeta">
+         2. Pégalo antes del comentario "fin blog-grid"
+         3. Cambia la imagen, categoría, título,
+            resumen, fecha y el enlace "Leer más"
+  ============================================= -->
+  <section id="blog">
+
+    <h2 class="seccion-titulo fade-in">Últimas <span>Entradas</span></h2>
+    <div class="linea-decorativa fade-in"></div>
+    <p class="seccion-subtitulo fade-in">Ideas, reflexiones y aprendizajes</p>
+
+    <div class="blog-grid">
+
+      <!-- ARTÍCULO 1 -->
+      <article class="blog-tarjeta fade-in">
+        <img class="blog-imagen"
+             src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=600"
+             alt="Persona escribiendo en laptop" />
+        <div class="blog-contenido">
+          <span class="blog-categoria">Diseño</span>
+          <h3 class="blog-tarjeta-titulo">Cómo empecé a diseñar desde cero</h3>
+          <p class="blog-resumen">
+            Cuento mi historia de cómo pasé de no saber nada de diseño a
+            crear mis primeros proyectos profesionales con herramientas gratuitas.
+          </p>
+          <div class="blog-pie">
+            <span class="blog-fecha">10 Mar 2026</span>
+            <!-- Reemplaza href="#" con el enlace real de tu artículo -->
+            <a href="#" class="blog-leer-mas">Leer más →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ARTÍCULO 2 -->
+      <article class="blog-tarjeta fade-in">
+        <img class="blog-imagen"
+             src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600"
+             alt="Equipo trabajando en computadoras" />
+        <div class="blog-contenido">
+          <span class="blog-categoria">Tecnología</span>
+          <h3 class="blog-tarjeta-titulo">Las 5 herramientas que uso cada día</h3>
+          <p class="blog-resumen">
+            Una lista honesta de las aplicaciones y recursos que forman parte
+            de mi flujo de trabajo diario y por qué las recomiendo.
+          </p>
+          <div class="blog-pie">
+            <span class="blog-fecha">25 Feb 2026</span>
+            <a href="#" class="blog-leer-mas">Leer más →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ARTÍCULO 3 -->
+      <article class="blog-tarjeta fade-in">
+        <img class="blog-imagen"
+             src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600"
+             alt="Viaje a la montaña" />
+        <div class="blog-contenido">
+          <span class="blog-categoria">Viajes</span>
+          <h3 class="blog-tarjeta-titulo">Mi aventura de 7 días en los Andes</h3>
+          <p class="blog-resumen">
+            Todo lo que aprendí (y lo que salió mal) en un viaje improvisado a
+            las montañas: equipo, rutas y momentos que no olvidaré.
+          </p>
+          <div class="blog-pie">
+            <span class="blog-fecha">14 Ene 2026</span>
+            <a href="#" class="blog-leer-mas">Leer más →</a>
+          </div>
+        </div>
+      </article>
+
+    </div><!-- fin blog-grid -->
+  </section>
+
+
+  <!-- =============================================
+       PIE DE PÁGINA (FOOTER)
+       Cambia el logo, el texto y los href="#"
+       por tus URLs de redes sociales reales.
+  ============================================= -->
+  <footer>
+    <div class="footer-logo">MILOGO</div>
+
+    <p class="footer-texto">
+      Gracias por visitar mi sitio. ¡Sigamos en contacto!
+    </p>
+
+    <!-- Redes sociales: reemplaza href="#" por tus URLs -->
+    <div class="footer-redes">
+      <a href="#" title="Instagram">IG</a>
+      <a href="#" title="Twitter / X">X</a>
+      <a href="#" title="LinkedIn">in</a>
+      <a href="#" title="YouTube">YT</a>
+    </div>
+
+    <!-- Cambia el año y tu nombre -->
+    <p class="footer-copy">© 2026 Tu Nombre · Todos los derechos reservados</p>
+  </footer>
+
+
+  <!-- =============================================
+       JAVASCRIPT
+       Activa la animación fade-in cuando el usuario
+       hace scroll y los elementos entran en pantalla.
+       No necesitas modificar este bloque.
+  ============================================= -->
+  <script>
+    // Selecciona todos los elementos con clase "fade-in"
+    const elementosFade = document.querySelectorAll('.fade-in');
+
+    // IntersectionObserver: detecta cuando un elemento
+    // entra al área visible de la pantalla
+    const observador = new IntersectionObserver((entradas) => {
+      entradas.forEach(entrada => {
+        if (entrada.isIntersecting) {
+          // Agrega la clase "visible" → activa la animación en estilos.css
+          entrada.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.15 // Se activa cuando el 15% del elemento es visible
+    });
+
+    // Conecta el observador a cada elemento
+    elementosFade.forEach(el => observador.observe(el));
+  </script>
+
+</body>
+</html>
